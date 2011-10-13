@@ -9,6 +9,7 @@ Bundle 'gmarik/vundle'
 
 
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'scrooloose/nerdtree'
 
 "Turn on smart indent
 set smartindent
