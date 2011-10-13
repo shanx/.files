@@ -1,0 +1,6 @@
+[submodule "external/vcprompt"]
+	path = external/vcprompt
+	url = https://github.com/djl/vcprompt.git
+[submodule "external/z"]
+	path = external/z
+	url = https://github.com/rupa/z.git
