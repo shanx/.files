@@ -1,0 +1,3 @@
+# Bundle directory is managed by vundle don't add to our local git
+.vim/bundle
+.vim/.netrwhist
