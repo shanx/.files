@@ -36,8 +36,10 @@ prompt_lastcommandfailed() {
 
 prompt_virtualenv() {
   if [ x$VIRTUAL_ENV != x ]; then
+    ENV=`basename "${VIRTUAL_ENV}"`
+
     echo -n $' \033[37menv \033[36m'
-    basename "${VIRTUAL_ENV}"
+    echo -n $ENV
     echo -n $'\033[00m'
   fi
 }
