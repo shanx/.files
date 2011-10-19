@@ -3,7 +3,9 @@
 
 # Auto update local dotfiles on remote systems
 if [ -n "${SSH_CLIENT}" ]; then 
-    git pull ~/.dotfiles
+    cd ~/.dotfiles
+    git pull
+    git submodule update
     dotfiles --sync
 fi
 
