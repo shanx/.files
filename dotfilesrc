@@ -2,13 +2,12 @@
 repository = ~/.dotfiles
 
 ignore = [
-    '.git',
-    '.gitignore',
     'README',
     'external',
     'bin',
     'bash',
-    '.bash',
+    'ipython',
+    '.git',
+    '.gitignore',
     '.dropbox',
-    '.gitmodules',
-    '.ipython']
+    '.gitmodules']
