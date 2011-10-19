@@ -14,6 +14,8 @@ if [ -n "${SSH_CLIENT}" ]; then
         git pull
         git submodule update
         dotfiles --sync
+        # Update the file
+        touch ~/.dotfiles/last_updated
         cd -
     fi
 fi
