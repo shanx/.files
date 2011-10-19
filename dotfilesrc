@@ -1,5 +1,5 @@
 [dotfiles]
-repository = /Users/shanx/.dotfiles
+repository = ~/.dotfiles
 
 ignore = [
     '.git',
