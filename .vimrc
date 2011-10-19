@@ -42,6 +42,11 @@ set cursorline
 set ruler
 set showmatch
 
+" Set tab completion options
+set wildmenu
+set wildmode=list:longest,full
+
+
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
  
