@@ -7,6 +7,7 @@ ignore = [
     'README',
     'external',
     'bin',
+    'bash',
     '.bash',
     '.dropbox',
     '.gitmodules',

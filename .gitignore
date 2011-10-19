@@ -1,6 +1,6 @@
 # Bundle directory is managed by vundle don't add to our local git
-.vim/bundle
-.vim/.netrwhist
+vim/bundle
+vim/.netrwhist
 .dropbox
 Icon?
 .*.swp
