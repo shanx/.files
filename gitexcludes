@@ -1,0 +1,10 @@
+.*.swp
+*.pyc
+*.pyo
+.vagrant
+.DS_Store?
+Icon?
+Thumbs.db
+*.svn
+*~
+*.swp
