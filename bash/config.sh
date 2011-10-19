@@ -40,4 +40,4 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export IGNOREEOF=1
 
 # Faster directory traversal
-source .dotfiles/bin/z.sh
+source ~/.dotfiles/bin/z.sh
