@@ -1,0 +1,13 @@
+[dotfiles]
+repository = /Users/shanx/.dotfiles
+
+ignore = [
+    '.git',
+    '.gitignore',
+    'README',
+    'external',
+    'bin',
+    '.bash',
+    '.dropbox',
+    '.gitmodules',
+    '.ipython']
