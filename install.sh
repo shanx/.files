@@ -7,3 +7,6 @@ git submodule update
 sudo pip install dotfiles
 ln -s ~/.dotfiles/dotfilesrc ~/.dotfilesrc
 dotfiles --sync
+
+# Create last_updated file
+touch ~/.dotfiles/.last_updated
