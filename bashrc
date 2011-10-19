@@ -7,6 +7,7 @@ if [ -n "${SSH_CLIENT}" ]; then
     git pull
     git submodule update
     dotfiles --sync
+    cd -
 fi
 
 # Source files containing the real deal
