@@ -4,3 +4,7 @@ if [ `uname` == "Darwin" ]; then
 else
     alias ls='ls --color=auto'
 fi
+
+alias sp='django shell_plus'
+alias rs='django runserver'
+alias ds='django demoserver'
