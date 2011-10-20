@@ -7,6 +7,8 @@ ignore = [
     'bin',
     'bash',
     'ipython',
+    'install.sh',
+    '.last_updated',
     '.git',
     '.gitignore',
     '.dropbox',
