@@ -4,7 +4,9 @@ git submodule init
 git submodule update
 
 # Install dotfiles
-sudo pip install dotfiles
+virtualenv ~/.dotfiles/.venv --no-site-packages
+~/.dotfiles/.venv/bin/pip install dotfiles
+#ln -s ~/.dotfiles/.venv/bin/dotfiles ~/.dotfiles/bin/dotfiles
 ln -s ~/.dotfiles/dotfilesrc ~/.dotfilesrc
 dotfiles --sync
 

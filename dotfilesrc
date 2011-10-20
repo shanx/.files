@@ -10,4 +10,5 @@ ignore = [
     '.git',
     '.gitignore',
     '.dropbox',
+    '.venv',
     '.gitmodules']
