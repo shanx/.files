@@ -1,0 +1,17 @@
+syntax: glob
+.svn
+.Python
+.installed.cfg
+*.pyc
+*.pyo
+*.log
+*.db
+*~
+.DS_Store
+Icon
+Thumbs.db
+.*.swp
+*.svn
+*~
+.vagrant
+.idea
