@@ -45,7 +45,7 @@ prompt_virtualenv() {
   fi
 }
 
-export PROMPT_BASEPROMPT='\n\e${PROMPT_USER_COLOR}\u\
+export PROMPT_BASEPROMPT='\n\e${PROMPT_USER_COLOR}\u${PROMPT_DEFAULT_COLOR}\
 \e${PROMPT_GRAY_COLOR} at \e${PROMPT_HOST_COLOR}\h \
 \e${PROMPT_GRAY_COLOR}in \e${PROMPT_GREEN_COLOR}\w\
 `prompt_lastcommandfailed`\
