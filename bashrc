@@ -16,7 +16,7 @@ if [ -n "${SSH_CLIENT}" ]; then
         ~/.dotfiles/.venv/bin/pip install --upgrade dotfiles
         ~/.dotfiles/.venv/bin/dotfiles --sync
         # Update the file
-        touch ~/.dotfiles/last_updated
+        touch ~/.dotfiles/.last_updated
         cd -
     fi
 fi
