@@ -30,8 +30,6 @@ shopt -s checkwinsize
 export GREP_OPTIONS='--color=auto'
 
 # Python settings
-export PYTHONDONTWRITEBYTECODE=1
-
 export VIRTUALENV_USE_DISTRIBUTE=1
 # don't let virtualenv show prompts by itself
 export VIRTUAL_ENV_DISABLE_PROMPT=1
