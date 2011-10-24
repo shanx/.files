@@ -8,3 +8,8 @@ fi
 alias sp='django shell_plus'
 alias rs='django runserver'
 alias ds='django demoserver'
+
+alias dm='django schemamigration --auto'
+
+
+alias la='ls -als'
