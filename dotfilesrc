@@ -14,4 +14,5 @@ ignore = [
     '.dropbox',
     '.venv',
     '.gitmodules',
-    '*.swp']
+    '*.swp',
+    'gmon.out']
