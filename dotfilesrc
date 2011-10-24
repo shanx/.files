@@ -13,4 +13,5 @@ ignore = [
     '.gitignore',
     '.dropbox',
     '.venv',
-    '.gitmodules']
+    '.gitmodules',
+    '*.swp']
