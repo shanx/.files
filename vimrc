@@ -56,5 +56,6 @@ nmap <leader>l :set list!<CR>
 "set listchars=tab:▸\ ,eol:¬
 
 " Allow to use mouse to point and click at help tags
-set mouse=a
-
+if v:version >= 702
+    set mouse=a
+endif
