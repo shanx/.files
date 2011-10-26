@@ -1,15 +1,17 @@
 filetype off  "Required for initializing Vundle
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" Commands are only available from VIM 7.3+
+if v:version >= 703
+    set rtp+=~/.vim/bundle/vundle/
+    call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+    " let Vundle manage Vundle
+    " required! 
+    Bundle 'gmarik/vundle'
 
-
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'scrooloose/nerdtree'
+    Bundle 'Lokaltog/vim-easymotion'
+    Bundle 'scrooloose/nerdtree'
+endif
 
 "Turn on smart indent
 set smartindent
