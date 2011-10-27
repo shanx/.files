@@ -2,7 +2,6 @@
 # Changed path of egrep from /bin/egrep to /usr/bin/egrep
 pathmunge () {
         if ! echo $PATH | /usr/bin/egrep -q "(^|:)$1($|:)" ; then
-            echo "Adding $1"
            if [ "$2" = "after" ] ; then
               PATH=$PATH:$1
            else
