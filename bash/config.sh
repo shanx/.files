@@ -1,7 +1,3 @@
-# Custom bash prompt
-#export PS1="\u@\h:\W $ "
-#export PS1='\W $(vcprompt --format="[%s:%b]")\$ '
-
 # History control
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
