@@ -13,11 +13,11 @@ if [ -n "${SSH_CLIENT}" ]; then
         cd ~/.dotfiles
         git pull
         git submodule update
-        ~/.dotfiles/.venv/bin/pip install --upgrade dotfiles
+        ~/.dotfiles/.venv/bin/pip install dotfiles==0.4.4 --quiet
         ~/.dotfiles/.venv/bin/dotfiles --sync
         # Update the file
         touch ~/.dotfiles/.last_updated
-        cd -
+        cd ~
     fi
 fi
 
