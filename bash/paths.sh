@@ -1,7 +1,7 @@
 # From: http://www.moosechips.com/2011/01/bash-pathmunge/
 # Changed path of egrep from /bin/egrep to /usr/bin/egrep
 pathmunge () {
-        if ! echo $PATH | /usr/bin/egrep -q "(^|:)$1($|:)" ; then
+        if ! echo $PATH | `type egrep` -q "(^|:)$1($|:)" ; then
            if [ "$2" = "after" ] ; then
               PATH=$PATH:$1
            else
