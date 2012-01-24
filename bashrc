@@ -25,7 +25,7 @@ fi
 # Used from: http://superuser.com/questions/39751/add-directory-to-path-if-its-not-already-there/39995#39995
 add_to_path() {
     if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        PATH="$PATH:$1"
+        PATH="$1:$PATH"
     fi
 }
 export -f add_to_path
