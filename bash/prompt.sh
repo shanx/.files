@@ -45,13 +45,14 @@ prompt_virtualenv() {
   fi
 }
 
-export PROMPT_BASEPROMPT='\n\e${PROMPT_USER_COLOR}\u\
+TITLEBAR='\e]0;\h ${PWD/$HOME/~}\a'
+PROMPT='\n\e${PROMPT_USER_COLOR}\u\
 \e${PROMPT_GRAY_COLOR} at \e${PROMPT_HOST_COLOR}\h \
 \e${PROMPT_GRAY_COLOR}in \e${PROMPT_GREEN_COLOR}\w\
 `prompt_lastcommandfailed`\
 \e${PROMPT_GRAY_COLOR}`prompt_vcprompt`\
 `prompt_virtualenv`\
 \e${PROMPT_DEFAULT_COLOR}'
-export PS1="${PROMPT_BASEPROMPT}
+export PS1="${TITLEBAR}${PROMPT}
 $ "
 
