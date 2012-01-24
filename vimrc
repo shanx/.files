@@ -1,4 +1,5 @@
 filetype off  "Required for initializing Vundle
+set nocompatible
 
 " Commands are only available from VIM 7.3+
 if v:version >= 703
@@ -9,8 +10,21 @@ if v:version >= 703
     " required! 
     Bundle 'gmarik/vundle'
 
+    Bundle 'L9'
     Bundle 'Lokaltog/vim-easymotion'
     Bundle 'scrooloose/nerdtree'
+    Bundle 'mileszs/ack.vim'
+    Bundle 'wincent/Command-T'
+    Bundle 'msanders/snipmate.vim'
+    Bundle 'FuzzyFinder'
+    Bundle 'kchmck/vim-coffee-script'
+    Bundle 'tpope/vim-fugitive'
+    Bundle 'tpope/vim-surround'
+    Bundle 'pangloss/vim-javascript'
+    Bundle 'godlygeek/tabular'
+    Bundle 'hallettj/jslint.vim'
+    Bundle 'manalang/jshint.vim'
+    Bundle 'scrooloose/nerdcommenter'
 endif
 
 "Turn on smart indent
