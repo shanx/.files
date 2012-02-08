@@ -15,4 +15,4 @@
 	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "external/oh-my-zsh"]
 	path = external/oh-my-zsh
-	url = git://github.com/robbyrussell/oh-my-zsh.git
+	url = git@github.com:shanx/oh-my-zsh.git
