@@ -12,6 +12,7 @@ if [ -n "${SSH_CLIENT}" ]; then
     if [ $DELTA_TIME -gt 3600 ]; then
         cd ~/.dotfiles
         git pull
+        git submodule init
         git submodule update
         ~/.dotfiles/.venv/bin/pip install dotfiles==0.4.4 --quiet
         ~/.dotfiles/.venv/bin/dotfiles --sync
