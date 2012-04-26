@@ -6,3 +6,5 @@ Icon?
 .venv
 vim/bundle/*
 vim/.netrwhist
+external/hg-review/
+tmp/
