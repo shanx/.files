@@ -62,6 +62,8 @@ set showmatch
 set wildmenu
 set wildmode=list:longest,full
 
+" Allow vim to write to local system clipboard on mac
+set clipboard=unnamed
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
