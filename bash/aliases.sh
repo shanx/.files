@@ -32,10 +32,19 @@ function up() {
             nwd=`dirname $nwd`
             let COUNTER-=1
         done
+        if [ ${2:false} ]; then
+            pushd $nwd
+        else
             cd $nwd # change directories to the new working directory
+        fi
     else
         # print usage and return error
         echo "usage: up [NUMBER]"
         return 1
     fi
+}
+
+# Go up directory using pushd by default
+function pup() {
+    up $1 true
 }
