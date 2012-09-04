@@ -14,6 +14,12 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # Correct often made mistakes
 shopt -s cdspell
 
+# ‘**’ used in a filename expansion context will match 
+# all files and zero or more directories and subdirectories
+if ((BASH_VERSINFO[0] >= 4)); then 
+    shopt -s globstar
+fi
+
 # Put key mappings in inputrc
 export INPUTRC=~/.inputrc 
 
