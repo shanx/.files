@@ -11,6 +11,9 @@ shopt -s cmdhist
 # Make sure all terminals save history
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
+# Correct often made mistakes
+shopt -s cdspell
+
 # Put key mappings in inputrc
 export INPUTRC=~/.inputrc 
 
