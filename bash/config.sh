@@ -2,7 +2,12 @@
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 export HISTFILESIZE=10000
+# Ignore certain often used commands, & erases duplicates
+export HISTIGNORE="&:ls:la:[bf]g:exit"
+# Have all terminals append to history (instead of overwriting)
 shopt -s histappend
+# Save multinline commands as single line in history
+shopt -s cmdhist 
 # Make sure all terminals save history
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
