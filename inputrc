@@ -1,0 +1,19 @@
+$if Bash
+    # Always search history
+    "\e[A": history-search-backward
+    "\e[B": history-search-forward
+
+    # Search history back and forward using page-up and page-down
+    "\e[5~": history-search-backward
+    "\e[6~": history-search-forward
+
+    "\e[3~": backward-kill-word
+
+    # Completion
+    set match-hidden-files off
+    set page-completions on
+    set completion-query-items 350
+    set show-all-if-ambiguous on
+    set expand-tilde on
+ 
+$endif
