@@ -21,6 +21,8 @@ if ((BASH_VERSINFO[0] >= 4)); then
     shopt -s globstar
     # Allow autocorrection of directories in tab expansion
     shopt -s dirspell
+    # Allow cd without using cd
+    shopt -s autocd
 fi
 
 # Put key mappings in inputrc
