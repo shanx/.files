@@ -21,5 +21,6 @@ $if Bash
     set completion-query-items 350
     set show-all-if-ambiguous on
     set expand-tilde on
- 
+    set history-preserve-point on
+    set menu-complete-display-prefix on
 $endif
