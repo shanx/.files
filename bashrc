@@ -22,15 +22,6 @@ if [ -n "${SSH_CLIENT}" ]; then
     fi
 fi
 
-# Add paths without duplication
-# Used from: http://superuser.com/questions/39751/add-directory-to-path-if-its-not-already-there/39995#39995
-add_to_path() {
-    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
-        PATH="$1:$PATH"
-    fi
-}
-export -f add_to_path
-
 # Source files containing the real deal
 source ~/.dotfiles/bash/config.sh
 source ~/.dotfiles/bash/paths.sh
