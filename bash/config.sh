@@ -14,10 +14,13 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # Correct often made mistakes
 shopt -s cdspell
 
-# ‘**’ used in a filename expansion context will match 
-# all files and zero or more directories and subdirectories
+# The following options are only available in bash 4
 if ((BASH_VERSINFO[0] >= 4)); then 
+    # ‘**’ used in a filename expansion context will match 
+    # all files and zero or more directories and subdirectories
     shopt -s globstar
+    # Allow autocorrection of directories in tab expansion
+    shopt -s dirspell
 fi
 
 # Put key mappings in inputrc
