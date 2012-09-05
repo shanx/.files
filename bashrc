@@ -28,7 +28,6 @@ source ~/.dotfiles/bash/paths.sh
 source ~/.dotfiles/bash/aliases.sh
 source ~/.dotfiles/bash/completions.sh
 source ~/.dotfiles/bash/prompt.sh
-source ~/.dotfiles/bash/bindings.sh
 
 # Source settings from system local .bashrc
 if [ -f ~/.bashrc_local ]; then
