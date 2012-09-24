@@ -1,33 +1,16 @@
 # If not running interactively, don't do anything                                                 
 [ -z "$PS1" ] && return
 
-# Auto update local dotfiles on remote systems
-# Once every hour
-if [ -n "${SSH_CLIENT}" ]; then 
+export DOTDIR=$HOME/.dotfiles
 
-    LAST_UPDATED=`stat --format '%Y' ~/.dotfiles/.last_updated`
-    CURRENT_TIME=`date +%s`
-    DELTA_TIME=$(($CURRENT_TIME - $LAST_UPDATED))
-
-    if [ $DELTA_TIME -gt 3600 ]; then
-        cd ~/.dotfiles
-        git pull
-        git submodule init
-        git submodule update
-        ~/.dotfiles/.venv/bin/pip install dotfiles==0.4.4 --quiet
-        ~/.dotfiles/.venv/bin/dotfiles --sync
-        # Update the file
-        touch ~/.dotfiles/.last_updated
-        cd ~
-    fi
-fi
+$DOTDIR/bin/auto-update.sh
 
 # Source files containing the real deal
-source ~/.dotfiles/bash/config.sh
-source ~/.dotfiles/bash/paths.sh
-source ~/.dotfiles/bash/aliases.sh
-source ~/.dotfiles/bash/completions.sh
-source ~/.dotfiles/bash/prompt.sh
+source $DOTDIR/bash/config.sh
+source $DOTDIR/bash/paths.sh
+source $DOTDIR/bash/aliases.sh
+source $DOTDIR/bash/completions.sh
+source $DOTDIR/bash/prompt.sh
 
 # Source settings from system local .bashrc
 if [ -f ~/.bashrc_local ]; then
