@@ -9,9 +9,6 @@ $if Bash
 
     "\e[3~": backward-kill-word
     
-    # Have tab show menu (like zsh does by default)
-    tab: menu-complete
-
     # This will complete history search with !
     space: magic-space
 
