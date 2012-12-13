@@ -40,7 +40,6 @@ upto ()
         return;
     fi;
     local upto=$1;
-    echo "{PWD/\/$upto\/*//$upto}"
     cd "${PWD/\/$upto\/*//$upto}"
 }
 
