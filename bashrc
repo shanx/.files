@@ -11,6 +11,7 @@ source $DOTDIR/bash/paths.sh
 source $DOTDIR/bash/aliases.sh
 source $DOTDIR/bash/completions.sh
 source $DOTDIR/bash/prompt.sh
+source $DOTDIR/bash/commands.sh
 
 # Source settings from system local .bashrc
 if [ -f ~/.bashrc_local ]; then
