@@ -59,6 +59,11 @@ prompt_end() {
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
 
+# Time: [hour:minute]
+prompt_time() {
+  prompt_segment blue black "%D{[%I:%M:%S]}%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
+}
+
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   local user=`whoami`
@@ -171,3 +176,5 @@ build_prompt() {
 
 PROMPT='%{%f%b%k%}$(build_prompt)
 >> '
+
+RPROMPT='%{$fg_bold[grey]%}%D{%K:%M:%S}%{$reset_color%}'
