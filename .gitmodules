@@ -16,3 +16,6 @@
 [submodule "external/oh-my-zsh"]
 	path = external/oh-my-zsh
 	url = git@github.com:shanx/oh-my-zsh.git
+[submodule "external/dircolors-solarized"]
+	path = external/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git
