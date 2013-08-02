@@ -1,7 +1,11 @@
-cd ~/.dotfiles
+pushd ~/.dotfiles
 # Auto add submodules
 git submodule init
 git submodule update
+
+pushd external/hg-prompt/
+git submodule update --init
+popd
 
 # Install dotfiles
 virtualenv ~/.dotfiles/.venv --no-site-packages
