@@ -8,3 +8,5 @@ vim/bundle/*
 vim/.netrwhist
 external/hg-review/
 tmp/
+.hg
+*.pyc
