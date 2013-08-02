@@ -1,1 +1,0 @@
-../external/z/z.sh
