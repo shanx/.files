@@ -304,7 +304,7 @@ def prompt(ui, repo, fs='', **opts):
 
         flag = ''
         if '|modified' not in g and '|unknown' not in g:
-            flag = '!' if modified else '?' if unknown else ''
+            flag = '?' if unknown else '!' if modified else ''
         else:
             if '|modified' in g:
                 flag += '!' if modified else ''
