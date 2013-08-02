@@ -19,15 +19,8 @@ fi
 # Oh-my-zsh plugin loading
 plugins=(git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history pip tmux virtualenv-prompt)
 
-# List directory contents after a 'cd'
-#function chpwd() {
-#    emulate -LR zsh
-#    ls
-#}
-
 # Color listing
 eval $(dircolors ~/.dir_colors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-
 
 source $ZSH/oh-my-zsh.sh
