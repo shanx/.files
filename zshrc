@@ -20,6 +20,7 @@ fi
 plugins=(git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history pip tmux virtualenv-prompt)
 
 # Color listing
+# XXX move this to a plugin?
 eval $(dircolors ~/.dir_colors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
