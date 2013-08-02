@@ -19,3 +19,6 @@
 [submodule "external/dircolors-solarized"]
 	path = external/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "external/git-hg"]
+	path = external/git-hg
+	url = https://github.com/cosmin/git-hg
