@@ -13,3 +13,6 @@
 [submodule "external/git-hg"]
 	path = external/git-hg
 	url = https://github.com/cosmin/git-hg
+[submodule "external/powerline"]
+	path = external/powerline
+	url = https://github.com/Lokaltog/powerline.git

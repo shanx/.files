@@ -59,6 +59,11 @@ prompt_end() {
 ### Prompt components
 # Each component will draw itself, and hide itself if no information needs to be shown
 
+# Set tmux window title
+set_title() {
+  echo "\033k$1\033\\"
+}
+
 # Time: [hour:minute]
 prompt_time() {
   prompt_segment blue black "%D{[%I:%M:%S]}%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
@@ -148,12 +153,13 @@ prompt_status() {
 ## Main prompt
 build_prompt() {
   RETVAL=$?
+  #set_title
   prompt_status
+  prompt_virtualenv
   prompt_context
   prompt_dir
   prompt_git
   prompt_hg
-  prompt_virtualenv
   prompt_end
 }
 

@@ -10,6 +10,8 @@ ZSH_THEME="agnoster-remco"
 export WORKON_HOME=$HOME/Environments
 export PROJECT_HOME=$HOME/Projects
 
+export DISABLE_AUTO_TITLE="true"
+
 # Load local zshrc if it exists, this also contains local paths so should be done before any plugin loading 
 # or further plugins
 if [[ -f $HOME/.zshrc_local ]]; then
@@ -17,7 +19,7 @@ if [[ -f $HOME/.zshrc_local ]]; then
 fi
 
 # Oh-my-zsh plugin loading
-plugins=(git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history pip tmux virtualenv-prompt)
+plugins=(git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history tmux virtualenv-prompt)
 
 # Color listing
 # XXX move this to a plugin?
