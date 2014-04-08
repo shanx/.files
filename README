@@ -1,3 +1,20 @@
 These are my dotfiles, feel free to stea... I mean reuse stuff that you find here as I've done with other's dotfiles as well.
 
 Everything in this repo assumes you will install (git clone) to ~/.dotfiles and you have zsh and oh-my-zsh installed on your computer.
+
+Prerequisites:
+
+ * Xcode
+  * command line tools (which includes GCC)
+
+ * Homebrew
+  * Python
+  * tmux
+  * vim
+  * Git/Mercurial
+  * GNU coreutils
+  * ZSH
+
+ * Python (via pip)
+   * virtualenv
+   * virtualenvwrapper
