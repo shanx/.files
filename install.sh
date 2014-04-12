@@ -13,5 +13,8 @@ virtualenv ~/.dotfiles/.venv --no-site-packages
 ln -sf ~/.dotfiles/dotfilesrc ~/.dotfilesrc
 ~/.dotfiles/bin/dotfiles --sync
 
+# Install vundle bundles
+vim -c "BundleInstall"
+
 # Create last_updated file
 touch ~/.dotfiles/.last_updated
