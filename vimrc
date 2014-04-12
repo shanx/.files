@@ -25,6 +25,7 @@ if v:version >= 703
     Bundle 'hallettj/jslint.vim'
     Bundle 'manalang/jshint.vim'
     Bundle 'scrooloose/nerdcommenter'
+    Bundle 'andreimaxim/vim-io'
 endif
 
 "Turn on smart indent
