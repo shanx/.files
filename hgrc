@@ -1,0 +1,22 @@
+[ui]
+username = Remco Wendt <remco.wendt@gmail.com>
+ignore = ~/.hgignore
+
+[extensions]
+hgext.fetch =
+hgext.extdiff =
+hgext.purge = 
+color =
+pager =
+progress = 
+rebase = 
+record = 
+prompt = ~/.dotfiles/external/hg-prompt/prompt.py
+shelve =
+
+[pager]
+pager = LESS='FSRX' less
+ignore = version, help, update, serve, record
+
+[extdiff]
+cmd.opendiff =  fmdiff
