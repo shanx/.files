@@ -10,4 +10,3 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 #alias uwup='CHAMELEON_RELOAD=true bin/uwsgi --ini-paste-logged parts/etc/paster.ini --honour-stdin'
 #alias deploy='./bin/fab deploy:3,3188-pubsub-integration'
 #alias fab='./bin/fab'
-echo 'local loaded!'
