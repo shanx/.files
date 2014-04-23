@@ -13,7 +13,7 @@ export PROJECT_HOME=$HOME/Projects
 export DISABLE_AUTO_TITLE="true"
 
 # Oh-my-zsh plugin loading
-plugins=(profiles git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history tmux virtualenv-prompt colored-man dirhistory extract history-substring-search jump per-directory-history)
+plugins=(profiles git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history tmux virtualenv-prompt colored-man dirhistory extract history-substring-search jump per-directory-history colorize)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,3 +25,6 @@ HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="bg=black,fg=red"
 # XXX move this to a plugin?
 eval $(dircolors ~/.dir_colors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
+# By default use colorize for viewing files
+alias cat="colorize"
