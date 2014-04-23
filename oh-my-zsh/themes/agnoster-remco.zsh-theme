@@ -131,8 +131,9 @@ prompt_dir() {
 # Virtualenv: current working virtualenv
 prompt_virtualenv() {
   local virtualenv_path="$VIRTUAL_ENV"
+  local python_version=$($VIRTUAL_ENV/bin/python -V 2>&1 | cut -f 2 -d ' ')
   if [[ -n $virtualenv_path ]]; then
-    prompt_segment cyan black "⨀ `basename $virtualenv_path`"
+    prompt_segment cyan black "⨀ `basename $virtualenv_path` ($python_version) "
   fi
 }
 
