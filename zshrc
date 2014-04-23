@@ -13,7 +13,7 @@ export PROJECT_HOME=$HOME/Projects
 export DISABLE_AUTO_TITLE="true"
 
 # Oh-my-zsh plugin loading
-plugins=(profiles git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history tmux virtualenv-prompt colored-man dirhistory extract history-substring-search jump per-directory-history colorize)
+plugins=(profiles git mercurial python autojump virtualenv virtualenvwrapper brew bower cp django github heroku history tmux virtualenv-prompt colored-man dirhistory extract history-substring-search jump per-directory-history colorize sudo vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
