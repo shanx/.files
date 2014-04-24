@@ -25,6 +25,3 @@ HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="bg=black,fg=red"
 # XXX move this to a plugin?
 eval $(dircolors ~/.dir_colors)
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
-
-# By default use colorize for viewing files
-alias cat="colorize"
