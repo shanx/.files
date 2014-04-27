@@ -97,7 +97,8 @@ end
 function prompt_user -d "Display actual user if different from $default_user"
   if [ "$USER" != "$default_user" -o -n "$SSH_CLIENT" ]
     set USER_PROMPT (whoami)@(hostname -s)
-    prompt_segment black fff $USER_PROMPT
+    # normal doesn't work here so force the normal grey color
+    prompt_segment black eee $USER_PROMPT
   end
 end
 
