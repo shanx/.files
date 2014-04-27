@@ -16,3 +16,12 @@
 [submodule "external/powerline"]
 	path = external/powerline
 	url = https://github.com/Lokaltog/powerline.git
+[submodule "oh-my-zsh/plugins/zsh-syntax-highlighting"]
+	path = oh-my-zsh/plugins/zsh-syntax-highlighting
+	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "oh-my-zsh/plugins/zsh-autosuggestions"]
+	path = oh-my-zsh/plugins/zsh-autosuggestions
+	url = git@github.com:tarruda/zsh-autosuggestions.git
+[submodule "oh-my-zsh/plugins/zsh-history-substring-search"]
+	path = oh-my-zsh/plugins/zsh-history-substring-search
+	url = git@github.com:zsh-users/zsh-history-substring-search.git
