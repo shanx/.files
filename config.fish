@@ -8,6 +8,9 @@ set fish_theme agnoster-remco
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Example format: set fish_plugins autojump bundler
 
+# Change default completion color to a more readable version
+set fish_color_command 0072ff
+
 # Path to your custom folder (default path is $FISH/custom)
 set fish_custom $HOME/.dotfiles/oh-my-fish
 
