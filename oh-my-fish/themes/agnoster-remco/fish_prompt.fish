@@ -12,6 +12,7 @@
 # set -g default_user your_normal_user
 
 
+#set fish_color_command green
 
 set -g current_bg NONE
 set segment_separator ''
@@ -85,7 +86,8 @@ function prompt_finish -d "Close open segments"
 end
 
 function prompt_on_newline -d "We prefer having the actual typing on a newline"
-  echo
+  # This is to prevent the quick directory switching from leaving part of the old dir
+  echo '                    '
   echo '>> '
 end
 
