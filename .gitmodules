@@ -25,3 +25,6 @@
 [submodule "oh-my-zsh/plugins/zsh-history-substring-search"]
 	path = oh-my-zsh/plugins/zsh-history-substring-search
 	url = git@github.com:zsh-users/zsh-history-substring-search.git
+[submodule "external/virtualfish"]
+	path = external/virtualfish
+	url = git@github.com:adambrenecki/virtualfish.git
