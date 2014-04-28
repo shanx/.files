@@ -6,7 +6,7 @@ set fish_theme agnoster-remco
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-fish/plugins/*)
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
-# Example format: set fish_plugins autojump bundler
+set fish_plugins autojump brew extract
 
 # Change default completion color to a more readable version
 set fish_color_command 0072ff
