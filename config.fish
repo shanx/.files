@@ -8,6 +8,14 @@ set fish_theme agnoster-remco
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 set fish_plugins autojump brew extract
 
+# Python virtualenv support
+set -g VIRTUALFISH_COMPAT_ALIASES
+set -g VIRTUALFISH_HOME ~/Environments/
+. ~/.dotfiles/external/virtualfish/virtual.fish
+# optional plugins
+. ~/.dotfiles/external/virtualfish/auto_activation.fish
+. ~/.dotfiles/external/virtualfish/global_requirements.fish
+
 # Change default completion color to a more readable version
 set fish_color_command 0072ff
 
