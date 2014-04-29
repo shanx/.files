@@ -22,5 +22,8 @@ set fish_color_command 0072ff
 # Path to your custom folder (default path is $FISH/custom)
 set fish_custom $HOME/.dotfiles/oh-my-fish
 
+# Load autojump
+. /usr/local/Cellar/autojump/HEAD/etc/autojump.fish
+
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
