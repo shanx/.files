@@ -27,3 +27,12 @@ set fish_custom $HOME/.dotfiles/oh-my-fish
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+# Path operations
+
+# Homebrew paths
+_append_path /usr/local/bin
+_append_path /usr/local/sbin
+
+# GNU bin replacement utilities
+_append_path /usr/local/opt/coreutils/libexec/gnubin
