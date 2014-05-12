@@ -135,10 +135,10 @@ function prompt_hg -d "Display the actual hg state"
     # Name colission so use stat
     set -l stat (command hg prompt "{status}")
     set -l branch (command hg prompt " {branch}")
-    if [  "$status" = "?" ]
+    if [  "$stat" = "?" ]
       # if files are not added
       prompt_segment red white "$branch"
-    elif [ test "$status" = "!" ]
+    else if [ "$stat" = "!" ]
       # if any modification
       prompt_segment yellow black "$branch"
     else
