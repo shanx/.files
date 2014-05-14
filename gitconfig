@@ -2,9 +2,15 @@
 	name = Remco Wendt
 	email = remco.wendt@gmail.com
 [core]
-    excludesfile = ~/.gitexcludes
+	excludesfile = /Users/remco/.gitexcludes
 [push]
 	default = simple
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
