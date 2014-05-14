@@ -1,6 +1,6 @@
 [ui]
 username = Remco Wendt <remco.wendt@gmail.com>
-ignore = ~/.hgignore
+ignore = ~/.hgignore_global
 
 [extensions]
 hgext.fetch =
