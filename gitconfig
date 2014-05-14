@@ -2,7 +2,7 @@
 	name = Remco Wendt
 	email = remco.wendt@gmail.com
 [core]
-	excludesfile = /Users/remco/.gitexcludes
+	excludesfile = /Users/remco/.gitignore_global
 [push]
 	default = simple
 [filter "media"]
