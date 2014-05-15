@@ -8,6 +8,9 @@ set fish_theme agnoster-remco
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 set fish_plugins autojump brew extract
 
+# Set locales: see https://groups.google.com/forum/#!topic/django-developers/AcLKevDgicY
+set -gx  LC_ALL en_US.UTF-8  
+
 # Python virtualenv support
 set -g VIRTUALFISH_COMPAT_ALIASES
 set -g VIRTUALFISH_HOME ~/Environments/
