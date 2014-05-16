@@ -121,11 +121,11 @@ function prompt_git -d "Display the actual git state"
       set ref "➦ $branch "
     end
     set branch_symbol ""
-    set -l branch (echo $ref | sed  "s-refs/heads/-$branch_symbol -")
+    set -l branch (echo $ref | sed  "s-refs/heads/-$branch_symbol git:-")
     if [ "$dirty" != "" ]
-      prompt_segment yellow black "$branch $dirty"
+      prompt_segment yellow black "$branch"
     else
-      prompt_segment green black "$branch $dirty"
+      prompt_segment green black "$branch"
     end
   end
 end
@@ -134,7 +134,7 @@ function prompt_hg -d "Display the actual hg state"
   if command hg id >/dev/null 2>&1
     # Name colission so use stat
     set -l stat (command hg prompt "{status}")
-    set -l branch (command hg prompt " {branch}")
+    set -l branch (command hg prompt " hg:{branch}")
     if [  "$stat" = "?" ]
       # if files are not added
       prompt_segment red white "$branch"
