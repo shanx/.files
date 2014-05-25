@@ -2,8 +2,6 @@
 .dropbox
 Icon?
 .*.swp
-.last_updated
-.venv
 vim/bundle/*
 vim/.netrwhist
 external/hg-review/
