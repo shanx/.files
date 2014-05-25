@@ -39,3 +39,6 @@ _append_path /usr/local/sbin
 
 # GNU bin replacement utilities
 _append_path /usr/local/opt/coreutils/libexec/gnubin
+
+# Docker host
+set -gx DOCKER_HOST tcp://localhost:4243
