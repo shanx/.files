@@ -11,7 +11,7 @@ pager =
 progress = 
 rebase = 
 record = 
-prompt = ~/.dotfiles/external/hg-prompt/prompt.py
+prompt = ~/.files/external/hg-prompt/prompt.py
 shelve =
 
 [pager]
