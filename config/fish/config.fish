@@ -14,16 +14,16 @@ set -gx  LC_ALL en_US.UTF-8
 # Python virtualenv support
 set -g VIRTUALFISH_COMPAT_ALIASES
 set -g VIRTUALFISH_HOME ~/Environments/
-. ~/.dotfiles/external/virtualfish/virtual.fish
+. ~/.files/external/virtualfish/virtual.fish
 # optional plugins
-. ~/.dotfiles/external/virtualfish/auto_activation.fish
-. ~/.dotfiles/external/virtualfish/global_requirements.fish
+. ~/.files/external/virtualfish/auto_activation.fish
+. ~/.files/external/virtualfish/global_requirements.fish
 
 # Change default completion color to a more readable version
 set fish_color_command 0072ff
 
 # Path to your custom folder (default path is $FISH/custom)
-set fish_custom $HOME/.dotfiles/oh-my-fish
+set fish_custom $HOME/.files/oh-my-fish
 
 # Load autojump
 . /usr/local/Cellar/autojump/HEAD/etc/autojump.fish

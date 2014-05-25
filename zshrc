@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 # My custom oh-my-zsh config location
-ZSH_CUSTOM=$HOME/.dotfiles/oh-my-zsh
+ZSH_CUSTOM=$HOME/.files/oh-my-zsh
 
 # Oh-my-zsh theme loading
 ZSH_THEME="agnoster-remco"

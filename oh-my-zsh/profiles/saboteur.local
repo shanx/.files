@@ -1,5 +1,5 @@
 # Paths
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/ruby/bin:/Users/rwendt/bin:/Users/rwendt/.dotfiles/bin:/Applications/Firefox.app/Contents/MacOS:/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/ruby/bin:/Users/rwendt/bin:/Users/rwendt/.files/bin:/Applications/Firefox.app/Contents/MacOS:/usr/local/share/npm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 
 #export EDITOR="/usr/local/bin/mate -w" 
 
