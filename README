@@ -1,6 +1,6 @@
-These are my dotfiles, feel free to stea... I mean reuse stuff that you find here as I've done with other's dotfiles as well.
+These are my .files, feel free to stea... I mean reuse stuff that you find here as I've done with other's .files as well.
 
-Everything in this repo assumes you will install (git clone) to ~/.dotfiles and you have zsh and oh-my-zsh installed on your computer.
+Everything in this repo assumes you will install (git clone) to ~/.files and you have zsh and oh-my-zsh/fish and oh-my-fish installed on your computer.
 
 Prerequisites:
 
