@@ -22,6 +22,7 @@ ln -si .files/slate .slate
 ln -si .files/tmux.conf .tmux.conf
 ln -si .files/vim .vim
 ln -si .files/vimrc .vimrc
+ln -si .files/ideavimrc .ideavimrc
 ln -si .files/zshrc .zshrc
 popd
 
