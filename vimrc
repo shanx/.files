@@ -76,3 +76,6 @@ nmap <leader>l :set list!<CR>
 if v:version >= 702
     set mouse=a
 endif
+
+" Set GUI (MacVim) options
+set guifont=Osaka-mono:h14
